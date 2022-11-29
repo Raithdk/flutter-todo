@@ -1,9 +1,8 @@
 import 'dart:html';
 
 import 'package:flutter/material.dart';
-import '../constants/colors.dart';
-import '../widget/todo_item.dart';
-import '../model/todo.dart';
+import 'todo_item.dart';
+import 'todo.dart';
 
 class Home extends StatefulWidget {
   Home({Key? key}) : super(key: key);
@@ -23,10 +22,10 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: todoBackground,
+      backgroundColor: Colors.grey[200],
       appBar: AppBar(
         title: Text('ToDo App'),
-        backgroundColor: todoBlue,
+        backgroundColor: Colors.blue[400],
       ),
       body: Stack(children: [
         Container(
